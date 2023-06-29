@@ -1,3 +1,3 @@
 # pipelines
 
-password = "Hell0W0rld123!@#
+password = "Hell0W0rld123!@#"
