@@ -23,6 +23,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    outputs:
+      commitid: ${{ steps.commit.outputs.commitid }}
+      
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -37,3 +40,22 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Create local changes
+        run: |
+          echo "hello" &gt;&gt; sales663.txt
+          
+      - name: Commit files
+        id: commit
+
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add --all
+          git commit -m "Add changes" -a
+          git push -u origin $GITHUB_REF 
+          SHA=$(git rev-parse HEAD)
+          echo "::set-output name=commitid::$SHA
+    
