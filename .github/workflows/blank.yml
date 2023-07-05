@@ -39,5 +39,5 @@ jobs:
           echo test, and deploy your project.
           ls -F
           df -h
-          ./test_script.sh
+          source test_script.sh
 
