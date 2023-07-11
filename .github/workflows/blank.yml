@@ -4,6 +4,7 @@ name: CI_Sample
 
 env:
   PASSWORD: Lkdfj9ZZ578ADWE8!@
+  SSN: 123-50-8964
     
 # Controls when the workflow will run
 on:
