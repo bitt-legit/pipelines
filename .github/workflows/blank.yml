@@ -4,7 +4,7 @@ name: CI_Sample
 
 env:
   PASSWORD: Lkdfj9ZZ578ADWE8!@
-    
+  SSN: 124-50-2354
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
