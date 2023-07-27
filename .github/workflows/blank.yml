@@ -3,7 +3,7 @@
 name: CI_Sample
 
 env:
-  PASSWORD: Lkdfj9ZZ578ADWE8!@
+  TENANT: alan.legitsecurity.co
     
 # Controls when the workflow will run
 on:
