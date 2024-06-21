@@ -16,3 +16,10 @@ SSN="345-50-6789"
 echo "Test Passed"
 
 env 
+
+
+PASSWORD="Lkdfj943978ADWE8!@"
+PASSWORD="Welcome123"
+SSN="345-58-8095"
+
+PASSWORD="Lkdfj9ZZ578ADWEksjfdh8!@"
